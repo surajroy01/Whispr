@@ -1,0 +1,13 @@
+# Ngrok configuration for port forwarding
+# Run: ngrok start chat-app
+# Requires ngrok: https://ngrok.com/download
+
+version: "2"
+authtoken: YOUR_NGROK_AUTHTOKEN  # Get from https://dashboard.ngrok.com/get-started/your-authtoken
+
+tunnels:
+  chat-app:
+    proto: http
+    addr: 5000
+    # Optional: custom subdomain (requires paid plan)
+    # subdomain: my-chat-app
