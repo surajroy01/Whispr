@@ -3,7 +3,7 @@
  * Handles all HTTP requests to the backend
  */
 
-const API_BASE = window.location.origin;
+const API_BASE = "https://whispr-8aln.onrender.com";
 
 const getToken = () => localStorage.getItem('token');
 
